@@ -1,8 +1,7 @@
 # exerc_hels_0
 
 sequenceDiagram
-    participant browser
-    participant server
+    participant browser->>participant server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
