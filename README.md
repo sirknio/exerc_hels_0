@@ -1,5 +1,18 @@
 # exerc_hels_0
 
+```mermaid
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+
+```
+
+
+
 sequenceDiagram
     participant browser->>participant server
 
