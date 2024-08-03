@@ -1,6 +1,7 @@
-# exerc_hels_0
+# Ejercicio 0.4: Nuevo diagrama de nota
 
-
+Ejercicio 0.4 donde se establece un diagrama donde se muestre el comportamiento del navegador y el servidor cuando
+el usuario envía una nota a través de la app de Notas.
 
 ```mermaid
 
@@ -38,7 +39,7 @@ sequenceDiagram
     deactivate server
 
     Note left of browser: El browser ejecuta el JS para obtener el JSON de las notas del lado del servidor
-    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+
 
     browser->>server: HTTP GET <https://studies.cs.helsinki.fi/exampleapp/data.json>
     activate server
@@ -46,7 +47,6 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: The browser ejecuta el JS y se renderiza en el HTML para mostrar las notas
-    Note right of browser: The browser executes the callback function that renders the notes
 
 
 ```
