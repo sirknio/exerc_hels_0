@@ -113,7 +113,7 @@ sequenceDiagram
 
     browser->>server: HTTP POST <https://studies.cs.helsinki.fi/exampleapp/new_note_spa>
     activate server
-    server-->>browser: [{ "content": "dfg", "date": "2024-08-02" }, ... ]
+    server-->>browser: Response HTTP 201 Created
     deactivate server
 
     Note right of browser: The browser ejecuta el JS y renderiza el HTML para agregar la nueva notas
