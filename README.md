@@ -21,7 +21,7 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
-    Note right of browser: El servidor regresa el formulario HTML
+    Note left of server: El servidor regresa el formulario HTML
 
     browser->>server: HTTP GET <https://studies.cs.helsinki.fi/exampleapp/main.css>
     activate server
@@ -38,7 +38,7 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    Note left of server: El browser ejecuta el JS para obtener el JSON de las notas del lado del servidor
+    Note right of browser: El browser ejecuta el JS para obtener el JSON de las notas del lado del servidor
 
 
     browser->>server: HTTP GET <https://studies.cs.helsinki.fi/exampleapp/data.json>
